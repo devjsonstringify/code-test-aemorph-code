@@ -1,0 +1,84 @@
+.accolades {
+    margin-top: $lg;
+    margin-bottom: $lg;
+}
+
+
+.accolade {
+    text-align: center;
+
+    min-width: 50%;
+    flex-basis: 50%;
+    flex: 1;
+    
+    margin-bottom: $md;
+}
+
+.accolade-inner {
+    width: 240px;
+    margin: auto;
+}
+
+.accolade-decor {
+    margin-bottom: $xs;
+
+    img {
+        @include reset-img;
+        width: 60px;
+        margin: auto;
+    }
+}
+
+.accolade-magazine {
+    font-size: $fz-basic;
+
+    margin-bottom: $xs;
+}
+
+.accolade-title {
+    font-family: $ff-abril;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.1;
+    text-align: center;
+
+    min-height: 2.2em;
+    margin-bottom: $xs;
+}
+
+.accolade-excerpt {
+    font-size: $fz-sm;
+    text-align: center;
+    opacity: 0.5;
+}
+
+
+@media (min-width: 576px){
+
+    .accolades-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+}
+
+
+@media (min-width: 1200px){
+
+    .accolades {
+        margin-top: $xl + $sm;
+        margin-bottom: $xl + $sm;
+    }
+
+    .accolade {
+        flex-basis: initial;
+        min-width: initial;
+    }
+
+    .accolade-decor {
+        margin-bottom: $sm;
+    }
+
+}

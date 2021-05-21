@@ -1,0 +1,125 @@
+
+// ICON
+
+.social-icon {
+    list-style-type: none;
+    display: inline-block;
+
+    a {
+        position: relative;
+        display: block;
+        width: 20px;
+        height: auto;
+
+        transition: $trans-fast;
+
+        &::before {
+            content: "";
+            background: rgba(#fff, 0.1);
+            border-radius: 50%;
+            opacity: 0;
+
+            display: block;
+            position: absolute;
+            z-index: 0;
+            top: -100%;
+            left: -100%;
+            width: 300%;
+            height: 300%;
+
+            transition: $trans-normal;
+
+            .social-icons-dark & {
+                background-color: rgba($c-bg, 0.05);
+            }
+
+        }
+
+        &:hover,
+        &:focus {
+    
+            &::before {
+                opacity: 1;
+    
+                top: -150%;
+                left: -150%;
+                width: 400%;
+                height: 400%;
+            }
+        }
+
+    }
+
+    img {
+        position: relative;
+        z-index: 1;
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .social-icons & {
+        margin: 10px 15px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+
+    .social-icons-small & {
+
+        a {
+            width: 15px;
+        }
+    }
+    
+}
+
+
+
+// LAYOUT
+
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons-left {
+    justify-content: flex-start;
+}
+
+.social-icons-center {
+    justify-content: center;
+}
+
+.social-icons-right {
+    justify-content: flex-end;
+}
+
+.social-icons-justify {
+    justify-content: space-between;
+}
+
+.social-icons-even {
+    justify-content: space-around;
+}
+
+
+
+@media (min-width: 576px){
+
+    .social-icon {
+        .social-icons & {
+            margin: 15px 20px;
+        }
+    }
+
+}

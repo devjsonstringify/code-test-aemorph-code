@@ -1,0 +1,43 @@
+.partners {
+    margin-top: $lg;
+    margin-bottom: $lg;
+}
+
+
+.partner-logo {
+    text-align: center;
+
+    padding: 15px;
+    margin-bottom: $xs;
+
+    img {
+        @include reset-img;
+        width: 200px;
+        margin: auto;
+    }
+}
+
+
+@media (min-width: 576px){
+
+    .partners-logos {
+        display: flex;
+        align-items: center;
+    }
+
+    .partner-logo {
+        flex: 1;
+        img {
+            width: 240px;
+        }
+    }
+    
+}
+
+
+@media (min-width: 1200px){
+    .partners {
+        margin-top: $xl + $sm;
+        margin-bottom: $xl + $sm;
+    }
+}

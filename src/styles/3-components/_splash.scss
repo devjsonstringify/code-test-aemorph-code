@@ -1,0 +1,44 @@
+.splash {
+    background: $c-bg url(../../public/images/logo.svg) no-repeat center center;
+    background-size: 60px auto;
+
+    display: block;
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    
+}
+
+.splash-hide {
+    // opacity: 0;
+    width: 0%;
+    left: -25%;
+    pointer-events: none;
+
+    transition: $trans-slow;
+}
+
+
+// .splash-logo {
+
+
+//     width: 100%;
+//     height: 100%;
+
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+
+//     transition: $trans;
+
+//     .splash.splash-hide & {
+//         opacity: 0;
+//     }
+// }

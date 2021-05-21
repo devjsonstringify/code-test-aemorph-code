@@ -1,0 +1,144 @@
+%text {
+    line-height: 1.7;
+
+    p {
+        margin: 0;
+        margin-bottom: 1.7em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// HEADINGS
+
+%heading-font {
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+h1,
+.heading-1 {
+    font-size: $fz-1;
+    @extend %heading-font;
+}
+
+h2,
+.heading-2 {
+    font-size: $fz-2;
+    @extend %heading-font;
+}
+
+h3,
+.heading-3 {
+    font-size: $fz-3;
+    @extend %heading-font;
+}
+
+h4,
+.heading-4 {
+    font-size: $fz-4;
+    @extend %heading-font;
+}
+
+h5,
+.heading-5 {
+    font-size: $fz-5;
+    @extend %heading-font;
+}
+
+h6,
+.heading-6 {
+    font-size: $fz-6;
+    @extend %heading-font;
+}
+
+
+
+
+// TEXT
+
+.text {
+    @extend %text;
+}
+
+.text-xsmall {
+    font-size: $fz-xs;
+}
+
+.text-small {
+    font-size: $fz-sm;
+}
+
+.text-large {
+    font-size: $fz-lg;
+    line-height: 1.8;
+}
+
+.text-xlarge {
+    font-size: $fz-xl;
+    line-height: 1.8;
+}
+
+
+
+
+
+// FONT
+
+.fz-small {
+    font-size: $fz-sm;
+}
+
+.fz-medium {
+    font-size: $fz-basic;
+}
+
+.fz-large {
+    font-size: $fz-lg;
+}
+
+.fw-light {
+    font-weight: 300;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.fw-heavy {
+    font-weight: 900;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+
+
+// ALIGNMENT
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}

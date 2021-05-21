@@ -1,0 +1,24 @@
+.contact-info {
+    line-height: 1.4;
+}
+
+.contact-info-label {
+    opacity: 0.35;
+}
+
+.contact-info-value {
+
+    a {
+        outline: none;
+        text-decoration: none;
+        color: #fff;
+
+        &:hover,
+        &:focus {
+            outline: none;
+            text-decoration: none;
+            color: $c-gold-dark;
+        }
+
+    }
+}

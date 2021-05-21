@@ -1,0 +1,24 @@
+.section-header {
+    margin-bottom: $sm + 15;
+}
+
+.section-heading {
+    font-family: $ff-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: $fz-3;
+    color: $c-gold-dark;
+
+    .section-header-center & {
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 768px){
+
+    .section-header {
+        margin-bottom: $md;
+    }
+
+}

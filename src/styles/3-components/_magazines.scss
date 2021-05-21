@@ -1,0 +1,287 @@
+.magazines {
+    margin-top: $md;
+    margin-bottom: $md;
+}
+
+
+
+
+
+// TITLES
+
+.mag-titles {
+    overflow: hidden;
+
+    .slick-list {
+        overflow: visible;
+    }
+}
+
+.mag-titles-carousel {
+    margin-bottom: $md;
+
+    user-select: none;
+
+
+    .slick-slide {
+        outline: none !important;
+        cursor: pointer;
+    }
+}
+
+.mag-title {
+    font-size: $fz-4;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0.35;
+
+    padding-right: 10px;
+    transition: $trans;
+
+    .slick-current & {
+        opacity: 1;
+    }
+
+}
+
+@media (min-width: 768px){
+
+    .mag-title {
+        font-size: 56px;
+        padding-right: 30px;
+    }
+
+}
+
+
+
+// MAGAZINE
+
+.mag {
+    display: flex;
+}
+
+.mag-column-illustr {
+    width: 50%;
+    display: none;
+}
+
+.mag-column-content {
+    overflow: hidden;
+}
+
+
+
+.mag-illustr-carousel {
+    max-width: 550px;
+}
+
+.mag-illustr {
+    position: relative;
+    overflow: hidden;    
+}
+
+.mag-text {
+    @extend %text;
+    text-align: justify;
+
+    padding-top: $sm;
+    margin-bottom: $sm;
+    padding-right: $pagepadding-mob;
+    padding-left: $pagepadding-mob;
+    
+    user-select: initial;
+}
+
+
+// ISSUES
+
+.mag-issues {
+    overflow: hidden;
+}
+
+.issues-carousel-wrap {
+    width: 70%;
+
+    .slick-list {
+        overflow: visible;
+    }
+}
+
+
+
+.issues-arrows {
+    padding-right: $pagepadding-mob;
+    padding-left: $pagepadding-mob;
+    margin-top: $sm;
+}
+
+
+.issue {
+    padding-left: $pagepadding-mob;
+}
+
+.issue-inner {
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+
+    display: block;
+
+    transition: $trans-normal;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+.issue-pic {
+    margin-bottom: 20px;
+
+    transition: $trans-normal-slow;
+}
+
+.issue-date {
+    opacity: 0.25;
+}
+
+
+
+// SOURCES
+
+.mag-sources {
+    font-size: $fz-sm + 1;
+
+    padding-right: $pagepadding-mob;
+    padding-left: $pagepadding-mob;
+}
+
+.mag-source {
+    border-bottom: 1px solid rgba(#fff, 0.1);
+
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mag-source-label {
+    flex: 1;
+}
+
+.mag-source-icons {
+    flex: 1.5;
+
+    display: flex;
+    align-items: center;
+}
+
+.mag-source-link {
+    flex-basis: 100%;
+    min-width: 100%;
+
+    margin-top: $xs;
+}
+
+.mag-source-icon {
+    margin-right: 20px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.mag-source-icon-inner {
+    display: block;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        opacity: 0.5;
+    }
+
+    img {
+        height: 14px;
+        width: auto;
+    }
+}
+
+
+
+
+@media (min-width: 576px){
+
+    .mag-source-link {
+        text-align: right;
+
+        flex-basis: initial;
+        flex: 1.8;
+        min-width: auto;
+        margin: 0;
+        margin-top: -2px;
+    }
+
+
+}
+
+@media (min-width: 768px){
+    
+    .magazines {
+        margin-bottom: $xl;
+    }
+
+    .mag-title {
+        font-size: 56px;
+    }
+
+}
+
+
+@media (min-width: 1200px){
+
+    .magazines {
+        margin-bottom: $xl + $sm;
+    }
+
+    .mag-column-illustr {
+        display: block;
+    }
+
+    .mag-column-content {
+        width: 50%;
+    }
+
+    .issues-carousel-wrap {
+        max-width: 700px;   
+        width: 100%;
+    }
+
+    .issues-arrows {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .issue {
+        padding-right: 30px;
+        padding-left: 0;
+    }
+
+    .mag-text {    
+        max-width: 670px;
+        margin-top: $sm;
+        columns: 2;
+        column-gap: 60px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .mag-sources {
+        max-width: 670px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+}

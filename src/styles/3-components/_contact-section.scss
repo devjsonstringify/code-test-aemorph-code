@@ -1,0 +1,14 @@
+.contact {
+    background: url(../../public/images/covers.jpg) no-repeat center center;
+    background-size: auto 100%;
+
+    padding: $md $pagepadding-mob;
+}
+
+@media (min-width: 768px){
+
+    .contact {
+        padding: $xl $pagepadding-desk;
+    }
+
+}

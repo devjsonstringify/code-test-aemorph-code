@@ -1,0 +1,62 @@
+// SIZINGS
+
+$mult: 5px;
+
+$xs: ($mult * 3);
+$sm: ($mult * 6);
+$md: ($mult * 12);
+$lg: ($mult * 18);
+$xl: ($mult * 24);
+
+
+// COLORS
+
+$c-bg: #232225;
+$c-gold: #DFD270;
+$c-gold-dark: #C1B55D;
+$c-gold-darker: #B1A234;
+$c-gold-darker-2: darken($c-gold-darker, 5%);
+$c-bad: #fd6a77;
+
+
+
+
+// TYPE
+
+$ff-hv: 'Helvetica Neue', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$ff-serif: 'Old Standard TT', serif;
+$ff-abril: 'Abril Display', sans-serif;
+
+$fz-xs: 13px;
+$fz-sm: 14px;
+$fz-basic: 16px;
+$fz-lg: 18px;
+$fz-xl: 22px;
+
+$fz-1: 52px;
+$fz-2: 44px;
+$fz-3: 36px;
+$fz-4: 28px;
+$fz-5: 22px;
+$fz-6: 18px;
+
+
+
+// TRANSITIONS
+
+$trans-normal: 0.3s;
+$trans-normal-fast: 0.15s;
+$trans-normal-slow: 0.6s;
+
+$timing: cubic-bezier(0.76, 0, 0.24, 1);
+
+$trans: 0.6s $timing;
+$trans-fast: 0.3s $timing;
+$trans-slow: 0.9s $timing;
+
+
+
+// LAYOUT
+
+$pagepadding-mob: 30px;
+$pagepadding-desk: 60px;

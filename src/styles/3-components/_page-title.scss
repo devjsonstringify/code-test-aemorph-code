@@ -1,0 +1,14 @@
+.page-title {
+    font-size: $fz-2;
+    font-weight: normal;
+
+    text-align: center;
+}
+
+@media (min-width: 576px){
+
+    .page-title {
+        font-size: $fz-1;
+    }
+
+}

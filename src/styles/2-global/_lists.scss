@@ -1,0 +1,37 @@
+.list-pretty {
+    margin: $sm 0;
+    max-width: 100%;
+
+    > li {
+        line-height: 1.4;
+        color: rgba(#fff, 0.5);
+
+        padding-left: $xs;
+        margin-bottom: ($mult *2);
+
+        > .li-c {
+            color: #fff;
+        }
+    }
+
+    > ul,
+    > ol {
+        margin-top: $xs;
+    }
+
+}
+
+.li-c {
+    display: contents;
+}
+
+
+@media (max-width: 375px){
+
+    .list-pretty {
+        padding-left: 1em;
+    }
+
+}
+
+

@@ -1,0 +1,52 @@
+<div id="contact-modal" class="contact-modal">
+	<div class="contact-modal-inner">
+		
+		<div class="contact-modal-header">
+			<h2 class="uppercase stroke-heading stroke-heading-small contact-modal-heading">Leave a message</h2>
+			<button id="contact-modal-close" class="contact-modal-close-btn">Back</button>
+		</div>
+	
+		<form id="contact-form" class="contact-form" action="http://aemorph.com/static/654-heartmedia/message/" method="POST">
+
+			<div class="contact-form-fields">
+				<label class="large-field">
+					<input type="text" id="user_name" name="user_name" class="large-field-input contact-form-input-name" placeholder="Name">
+				</label>	
+				<label class="large-field">
+					<input type="email" id="user_email" name="user_email" class="large-field-input contact-form-input-email" placeholder="Email">
+				</label>	
+				<label class="large-field">
+					<textarea id="user_msg" name="user_msg" class="large-field-input contact-form-input-msg" placeholder="Message"></textarea>
+				</label>			
+				<button id="" class="button-underline">Send message</button>
+			</div>
+
+			<div class="contact-form-result contact-form-result-success">
+				<div class="contact-form-result-text">
+					<div class="text text-large">
+						Your message has been submitted
+					</div>
+				</div>
+			</div>
+
+			<div class="contact-form-result contact-form-result-error">
+				<div class="contact-form-result-text">
+					<div class="text text-large">
+						<b>Error!</b><br />
+						The message has not been sent, please contact us via <a href="mailto:info@heart-media.com" style="white-space: nowrap;">info@heart-media.com</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="contact-form-result contact-form-result-not-filled">
+				<div class="contact-form-result-text">
+					<div class="text text-large">
+						Some of the fields are empty
+					</div>
+				</div>
+			</div>
+			
+		</form>
+
+	</div>
+</div>

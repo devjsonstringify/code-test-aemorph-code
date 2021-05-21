@@ -1,0 +1,53 @@
+.circle-button  {
+    font-family: $ff-hv;
+    font-size: $fz-basic;
+    font-weight: 600;
+    color: $c-bg;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+
+    transition: $trans-normal;
+
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+
+}
+
+
+.circle-button {
+    width: 240px;
+    height: 240px;
+}
+
+
+.circle-button-dark {
+    background-color: $c-gold-darker;
+    &:hover,
+    &:focus {
+        background-color: darken($c-gold-darker, 5%);
+    }
+}
+
+
+@media (min-width: 576px){
+
+    .circle-button  {
+        width: 250px;
+        height: 250px;
+    }
+
+    .circle-button {
+        width: 400px;
+        height: 400px;
+    }
+
+}

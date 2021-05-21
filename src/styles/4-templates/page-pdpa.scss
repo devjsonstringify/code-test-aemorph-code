@@ -1,0 +1,33 @@
+.pdpa {
+
+}
+
+
+
+
+// CONTENT
+
+.pdpa-content {
+    padding-top: $md;
+    padding-bottom: $sm;
+}
+
+.pdpa-text {
+    @extend %text;
+    // font-size: $fz-lg;
+}
+
+
+
+// FOOTER
+
+.pdpa-footer {
+    margin-top: $md;
+    margin-bottom: $md;
+}
+
+.pdpa-upd {
+    font-style: italic;
+    text-align: right;
+    opacity: 0.5;
+}

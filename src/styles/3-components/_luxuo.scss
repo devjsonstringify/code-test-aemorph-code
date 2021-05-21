@@ -1,0 +1,158 @@
+.luxuo {
+    color: $c-bg;
+    background-color: #fff;
+
+    position: relative;
+    z-index: 1;
+    padding-right: $pagepadding-mob;
+    padding-left: $pagepadding-mob;
+    overflow: hidden;
+
+    a {
+        color: $c-gold-darker;
+
+        &:hover, &:focus {
+            color: $c-gold-darker-2;
+        }
+    }
+}
+
+
+
+.luxuo-content-inner {
+    padding-top: $sm + 15;
+}
+
+.luxuo-logo {
+    width: 180px;
+    margin-bottom: ($mult * 9);
+
+    img {
+        @include reset-img;
+    }
+}
+
+.luxuo-links {
+    margin-bottom: $sm;
+
+    .social-icons {
+        margin-top: ($mult * 3);
+    }
+}
+
+.luxuo-locations {
+    display: flex;
+    flex-wrap: wrap;
+
+    > * {
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+
+    a {
+        opacity: 0.5;
+        &:hover, &:focus {
+            opacity: 1;
+        }
+    }
+}
+
+.luxuo-text {
+    margin-top: $sm;
+}
+
+
+
+.luxuo-pic {
+    margin-right: -15px;
+    margin-left: -15px;
+
+    img {
+        box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.2);
+
+        @include reset-img;
+    }
+}
+
+
+@media (min-width: 768px){
+
+    .luxuo-pic {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+}
+
+
+@media (min-width: 992px){
+
+    .luxuo-row {
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .luxuo-content {
+        flex: 1;
+        align-self: center;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: $sm;
+    }
+
+    .luxuo-content-inner {
+        max-width: 440px;
+        padding-top: $md;
+        padding-bottom: $sm;
+    }
+
+    .luxuo-pic {
+        flex: 1.2;
+        margin-right: -180px;
+        padding-top: $sm;
+    }
+
+}
+
+
+@media (min-width: 1200px){
+
+    .luxuo {
+        padding-right: $pagepadding-desk;
+        padding-left: $pagepadding-desk;
+    }
+
+    .luxuo-content {
+        padding-right: 60px;
+    }
+
+    .luxuo-content-inner {
+        max-width: 480px;
+    }
+
+    .luxuo-logo {
+        width: 240px;
+    }
+
+    .luxuo-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: ($mult * 9);
+        .social-icons {
+            margin-top: 0;
+        }
+    }
+
+    .luxuo-text {
+        margin-top: 50px;
+    }
+
+    .luxuo-pic {
+        margin-right: 0;
+        padding-top: $md + 15;
+    }
+
+}

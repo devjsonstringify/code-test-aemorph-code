@@ -1,0 +1,26 @@
+.stroke-heading {
+    font-weight: 900;
+    font-size: 32px;
+    -webkit-text-stroke: 1px #fff;
+    -webkit-text-fill-color: $c-bg;
+
+    user-select: none;
+}
+
+
+.stroke-heading-small {
+    font-size: 28px;
+}
+
+
+@media (min-width: 576px){
+
+    .stroke-heading {
+        font-size: 56px;
+    }
+
+    .stroke-heading-small {
+        font-size: 36px;
+    }
+
+}

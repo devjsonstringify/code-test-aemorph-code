@@ -1,0 +1,25 @@
+.link-ext {
+    font-weight: 500;
+
+    display: inline-block;
+
+    > span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    svg {
+        fill: currentColor;
+
+        display: inline-block;
+        vertical-align: middle;
+        width: 11px;
+        margin: 0;
+        margin-bottom: -2px;
+        margin-left: 10px;
+
+        transition: $trans-normal;
+    }
+
+}
+

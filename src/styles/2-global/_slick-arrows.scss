@@ -1,0 +1,54 @@
+.carousel-arrows {
+    display: flex;
+    align-items: center;
+
+    .slick-arrow {
+        font-size: 0;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        border: none;
+        opacity: 0.5;
+
+        width: 42px;
+        height: 22px;
+        margin: 10px;
+
+        transition: $trans-normal;
+
+        &:hover,
+        &:focus {
+            outline: none;
+            opacity: 1;
+        }
+
+    }
+
+    .slick-prev {
+        background-image: url(../../public/images/carousel-arrow-prev.svg);
+        margin-left: 0;
+    }
+
+    .slick-next {
+        background-image: url(../../public/images/carousel-arrow-next.svg);
+    }
+
+    .slick-disabled {
+        opacity: 0.25;
+        pointer-events: none;
+    }
+
+}
+
+
+
+.carousel-arrows-large {
+
+
+    .slick-arrow {
+        width: 52px;
+        height: 26px;
+    }
+
+}

@@ -1,0 +1,19 @@
+.insta-grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+    max-width: 520px;
+    margin: auto;
+}
+
+.insta-thumb {
+    flex: 1;
+    flex-basis: 33.333%;
+    padding: 3px;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}

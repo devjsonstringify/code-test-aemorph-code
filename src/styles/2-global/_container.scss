@@ -1,0 +1,43 @@
+
+// LIMITED WIDTH
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: auto;
+}
+
+.container-narrow {
+    max-width: 960px;
+}
+
+@media (min-width: 576px){
+
+    .container {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+
+}
+
+
+
+
+// FLUID
+
+.container-fluid {
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+@media (min-width: 576px){
+
+    .container-fluid {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+
+}

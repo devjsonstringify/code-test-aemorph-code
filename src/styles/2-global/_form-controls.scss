@@ -1,0 +1,87 @@
+input,
+textarea {
+    font-family: $ff-hv;
+}
+
+
+
+
+// LARGE FIELDS
+
+.large-field {
+    display: block;
+    width: 100%;
+}
+
+.large-field-input {
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+    background: transparent !important;
+    border: none;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    transition: $trans-normal;
+
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover, 
+    &:-webkit-autofill:focus, 
+    &:-webkit-autofill:active {
+        transition-delay: 99999s;
+    }
+
+
+    &::-webkit-input-placeholder {
+        color: rgba(#fff, 0.35);
+        transition: $trans-normal;
+    }
+
+    &:-ms-input-placeholder {
+        color: rgba(#fff, 0.35);
+        transition: $trans-normal;
+    }
+
+    &::placeholder {
+        color: rgba(#fff, 0.35);
+        transition: $trans-normal;
+    }
+
+
+    &:focus {
+        outline: none;
+
+        &::-webkit-input-placeholder {
+            color: rgba(#fff, 0.1);
+        }
+
+        &:-ms-input-placeholder {
+            color: rgba(#fff, 0.1);
+        }
+
+        &::placeholder {
+            color: rgba(#fff, 0.1);
+        }
+
+	}
+
+
+	&.large-field-input-full {
+        font-size: 20px;
+	}
+
+}
+
+@media (min-width: 576px){
+
+    .large-field-input {
+        font-size: 56px;
+        &.large-field-input-full {
+            font-size: 24px;
+        }
+    }
+
+}

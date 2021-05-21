@@ -1,0 +1,143 @@
+.mobile-section {
+    margin-top: $xl;
+}
+
+
+
+
+// APP
+
+.mobile-section-app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: $lg;
+}
+
+.app {
+    text-align: center;
+
+    max-width: 380px;
+    margin: auto;
+}
+
+.app-mockup {
+
+    img {
+        width: 360px;
+        margin: auto;
+
+        user-select: none;
+        pointer-events: none;
+    }
+}
+
+.app-header {
+    position: relative;
+    z-index: 1;
+    margin-top: -200px;
+    margin-bottom: $sm;
+}
+
+.app-excerpt {
+    font-weight: 500;
+
+    margin-bottom: $sm + 15;
+}
+
+.app-powered {
+    font-size: $fz-sm;
+    margin-bottom: $sm + 15;
+
+    user-select: none;
+
+    img {
+        width: 140px;
+        display: block;
+        margin: auto;
+
+        pointer-events: none;
+    }
+}
+
+.app-download {
+    background: rgba(#fff, 0.05);
+
+    padding: 10px 30px;
+    overflow: auto;
+
+    user-select: none;
+}
+
+.app-download-heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;    
+    color: #fff;
+    opacity: 0.35;
+
+    margin-top: 20px;
+}
+
+.app-download-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > * {
+        margin: 15px;
+
+        img {
+            width: 100px;
+            display: block;
+            margin: 0;
+        }
+    }
+}
+
+
+
+
+
+// INSTAGRAM
+
+.mobile-section-insta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.insta {
+    text-align: center;
+}
+
+.insta-header {
+    margin-bottom: $sm + 15;
+}
+
+
+
+
+
+@media (min-width: 1200px){
+
+    .mobile-section {
+        margin-top: $xl + $sm;
+    }    
+
+    .mobile-section-row {
+        display: flex;
+    }
+
+    .mobile-section-app {
+        flex: 1;
+        margin-bottom: 0;
+    }
+
+    .mobile-section-insta {
+        flex: 1;
+    }
+
+}

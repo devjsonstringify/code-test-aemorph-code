@@ -1,0 +1,186 @@
+@import 'vars';
+@import '0-functions/fontface';
+@import '0-functions/reset-img';
+
+
+
+
+@include font-face('Helvetica Neue', '../../public/fonts/HelveticaNeueCyr/HelveticaUltraLight', 100, normal, ttf); // eot woff 
+@include font-face('Helvetica Neue', '../../public/fonts/HelveticaNeueCyr/HelveticaUltraLightItalic', 100, italic, ttf);
+
+@include font-face('Helvetica Neue', '../../public/fonts/HelveticaNeueCyr/HelveticaThin', 200, normal, ttf);
+@include font-face('Helvetica Neue', '../../public/fonts/HelveticaNeueCyr/HelveticaThinItalic', 200, italic, ttf);
+
+@include font-face('Helvetica Neue', '../../public/fonts/HelveticaNeueCyr/HelveticaLight', 300, normal, ttf);
+@include font-face('Helvetica Neue', '../../public/fonts/HelveticaNeueCyr/HelveticaLightItalic', 300, italic, ttf);
+
+@include font-face('Helvetica Neue', '../../public/fonts/HelveticaNeueCyr/HelveticaRegular', normal, normal, ttf);
+@include font-face('Helvetica Neue', '../../public/fonts/HelveticaNeueCyr/HelveticaItalic', normal, italic, ttf);
+
+@include font-face('Helvetica Neue', '../../public/fonts/HelveticaNeueCyr/HelveticaMedium', 500, normal, ttf);
+@include font-face('Helvetica Neue', '../../public/fonts/HelveticaNeueCyr/HelveticaMediumItalic', 500, italic, ttf);
+
+@include font-face('Helvetica Neue', '../../public/fonts/HelveticaNeueCyr/HelveticaBold', bold, normal, ttf);
+@include font-face('Helvetica Neue', '../../public/fonts/HelveticaNeueCyr/HelveticaBoldItalic', bold, italic, ttf);
+
+@include font-face('Helvetica Neue', '../../public/fonts/HelveticaNeueCyr/HelveticaHeavy', 800, normal, ttf);
+@include font-face('Helvetica Neue', '../../public/fonts/HelveticaNeueCyr/HelveticaHeavyItalic', 800, italic, ttf);
+
+@include font-face('Helvetica Neue', '../../public/fonts/HelveticaNeueCyr/HelveticaBlack', 900, normal, ttf);
+@include font-face('Helvetica Neue', '../../public/fonts/HelveticaNeueCyr/HelveticaBlackItalic', 900, italic, ttf);
+
+
+
+@include font-face('Abril Display', '../../public/fonts/AbrilDisplay/Abril_Display_Regular', normal, normal, woff otf);
+@include font-face('Abril Display', '../../public/fonts/AbrilDisplay/Abril_Display_Italic', normal, italic, woff otf);
+
+@include font-face('Abril Display', '../../public/fonts/AbrilDisplay/Abril_Display_SemiBold', 600, normal, woff otf);
+@include font-face('Abril Display', '../../public/fonts/AbrilDisplay/Abril_Display_SemiBoldItalic', 600, italic, woff otf);
+
+@include font-face('Abril Display', '../../public/fonts/AbrilDisplay/Abril_Display_Bold', bold, normal, woff otf);
+@include font-face('Abril Display', '../../public/fonts/AbrilDisplay/Abril_Display_BoldItalic', bold, italic, woff otf);
+
+@include font-face('Abril Display', '../../public/fonts/AbrilDisplay/Abril_Display_ExtraBold', 800, normal, woff otf);
+@include font-face('Abril Display', '../../public/fonts/AbrilDisplay/Abril_Display_ExtraBoldItalic', 800, italic, woff otf);
+
+@include font-face('Abril Display', '../../public/fonts/AbrilDisplay/Abril_Display_Black', 900, normal, woff otf);
+@include font-face('Abril Display', '../../public/fonts/AbrilDisplay/Abril_Display_BlackItalic', 900, italic, woff otf);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+
+// PLUGINS AND MODULES
+
+@import 'node_modules/slick-carousel/slick/slick.scss';
+@import '1-vendor/marquee-infinite';
+
+
+
+// BASE
+
+* {
+	box-sizing: border-box;
+
+	&:before, &:after {
+		box-sizing: border-box;
+	}
+}
+
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section, video, iframe {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+	display: block;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+img,
+video {
+	max-width: 100%;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+	
+	// scroll-behavior: smooth;
+}
+
+body {
+	font-family: $ff-hv;
+	letter-spacing: 0.01em;
+	font-size: $fz-basic;
+    background-color: $c-bg;
+	color: #fff;
+	
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+
+
+.no-scroll {
+	overflow: hidden;
+	@media (min-width: 1200px){
+		padding-right: 17px; // prevents width change
+	}
+}
+
+
+a {
+	outline: none;
+	text-decoration: none;
+	color: $c-gold;
+	
+	transition: $trans-normal;
+
+	&:hover,
+	&:focus {
+		outline: none;
+		text-decoration: none;
+		color: $c-gold-dark;
+	}
+
+}
+
+
+// SPASH SCREEN
+
+@import '3-components/splash';
+
+
+// GLOBAL STYLES
+
+@import '2-global/layout-mods';
+@import '2-global/container';
+@import '2-global/typography';
+@import '2-global/form-controls';
+@import '2-global/lists';
+@import '2-global/tables';
+@import '2-global/link-external';
+@import '2-global/btns';
+@import '2-global/btn-circle';
+@import '2-global/btn-underline';
+@import '2-global/heading-stroke';
+@import '2-global/section-header';
+@import '2-global/social-icons';
+@import '2-global/contact-info';
+
+@import '2-global/slick-arrows';
+@import '2-global/slick-dots';
+
+
+
+// INDEPENDENT COMPONENTS
+
+@import '3-components/page-title';
+@import '3-components/page-header';
+@import '3-components/header';
+@import '3-components/footer';
+@import '3-components/contact-modal';
+@import '3-components/hero';
+@import '3-components/marquee';
+@import '3-components/intro';
+@import '3-components/luxuo';
+@import '3-components/magazines';
+@import '3-components/events';
+@import '3-components/mobile-section';
+@import '3-components/insta-grid';
+@import '3-components/partners';
+@import '3-components/accolades';
+@import '3-components/partner-brands';
+@import '3-components/contact-section';
+
+
+
+// PAGES AND TEMPLATES
+
+@import '4-templates/page-pdpa';

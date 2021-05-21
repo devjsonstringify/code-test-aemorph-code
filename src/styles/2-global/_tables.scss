@@ -1,0 +1,56 @@
+.table {
+    border-collapse: collapse;
+
+    width: 100%;
+    max-width: 100%;
+
+    &, td, th {
+        text-align: left;
+        border: none;
+        border-bottom: 1px solid rgba(#fff, 0.15);
+    }
+
+    td, th {
+        vertical-align: top;
+        padding: $xs 10px;
+    }
+
+    .table-numeration {
+        font-weight: 500;
+        opacity: 0.5;
+
+        padding-left: 0;
+
+        a {
+            outline: none;
+            text-decoration: none;
+            color: #fff;
+    
+            &:hover,
+            &:focus {
+                outline: none;
+                text-decoration: none;
+                color: $c-gold;
+            }
+        }
+    }
+
+
+}
+
+
+@media (min-width: 768px){
+
+    .table {
+
+        td, th {
+            padding: $xs;
+        }
+
+        .table-numeration {
+            min-width: 100px;
+        }
+
+    }
+
+}

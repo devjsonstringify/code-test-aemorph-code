@@ -1,0 +1,36 @@
+.marquee {
+
+}
+
+.marquee-text {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1;
+    letter-spacing: -0.06em;    
+}
+
+.marquee-string {
+    padding-right: 20px;
+}
+
+
+
+@media (min-width: 576px){
+
+    .marquee-text {
+        font-size: 48px;
+    }
+
+}
+
+@media (min-width: 768px){
+
+    .marquee-text {
+        font-size: 92px;
+    }
+
+    .marquee-string {
+        padding-right: 40px;
+    }
+
+}
