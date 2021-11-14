@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.8.7",
+    "@splidejs/splide": "^3.3.1",
     "instafeed.js": "^1.4.1",
     "jquery": "^3.5.0",
     "marquee-infinite": "0.0.4",
