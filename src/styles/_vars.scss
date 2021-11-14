@@ -8,22 +8,19 @@ $md: ($mult * 12);
 $lg: ($mult * 18);
 $xl: ($mult * 24);
 
-
 // COLORS
 
 $c-bg: #232225;
-$c-gold: #DFD270;
-$c-gold-dark: #C1B55D;
-$c-gold-darker: #B1A234;
+$c-gold: #dfd270;
+$c-gold-dark: #c1b55d;
+$c-gold-darker: #b1a234;
 $c-gold-darker-2: darken($c-gold-darker, 5%);
 $c-bad: #fd6a77;
 
-
-
-
 // TYPE
 
-$ff-hv: 'Helvetica Neue', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$ff-hv: 'Helvetica Neue', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande',
+	sans-serif;
 $ff-serif: 'Old Standard TT', serif;
 $ff-abril: 'Abril Display', sans-serif;
 
@@ -40,8 +37,6 @@ $fz-4: 28px;
 $fz-5: 22px;
 $fz-6: 18px;
 
-
-
 // TRANSITIONS
 
 $trans-normal: 0.3s;
@@ -54,9 +49,8 @@ $trans: 0.6s $timing;
 $trans-fast: 0.3s $timing;
 $trans-slow: 0.9s $timing;
 
-
-
 // LAYOUT
 
 $pagepadding-mob: 30px;
 $pagepadding-desk: 60px;
+$paginateDot: 6px;

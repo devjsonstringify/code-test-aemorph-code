@@ -1,679 +1,1128 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Heart Media — 17 years of passion, emotion and style</title>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Heart Media — 17 years of passion, emotion and style</title>
+		<meta
+			name="description"
+			content="Heart Media is committed to publishing market leading magazines and digital media that connect with the region’s affluent and brand-conscious consumers through their chosen lifestyle activities."
+		/>
 
-	<meta name="description" content="Heart Media is committed to publishing market leading magazines and digital media that connect with the region’s affluent and brand-conscious consumers through their chosen lifestyle activities.">
+		<link rel="icon" href="public/favicon/favicon.ico" type="image/x-icon" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="public/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="public/favicon/favicon-16x16.png"
+		/>
+		<link
+			rel="mask-icon"
+			href="public/favicon/safari-pinned-tab.svg"
+			color="#5bbad5"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.3.1/dist/css/splide.min.css"
+		/>
 
-	<link rel="icon" href="public/favicon/favicon.ico" type="image/x-icon" />
-	<link rel="icon" type="image/png" sizes="32x32" href="public/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="public/favicon/favicon-16x16.png">
-	<link rel="mask-icon" href="public/favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<noscript>
+			<style>
+				.splash {
+					display: none;
+				}
+			</style>
+		</noscript>
+	</head>
 
-	<noscript>
-		<style>
-			.splash {
-				display: none;
-			}	
-		</style>
-	</noscript>
+	<body>
+		<div id="page">
+			<%= require('html-loader!./html/components/_splash.html') %> <%=
+			require('html-loader!./html/components/_header.html') %>
 
-</head>
-
-<body>
-<div id="page">
-
-
-
-	<%= require('html-loader!./html/components/_splash.html') %>
-
-
-	<%= require('html-loader!./html/components/_header.html') %>
-	
-	
-	<div class="hero">
-		<div class="hero-inner">
-			<img class="hero-img" src="public/images/hero.jpg" alt="" draggable="false">
-		</div>
-	</div>
-	
-	
-	
-	<div id="s-slogan" class="marquee">
-		<div class="marquee-text js-marquee-infinite">
-			<div class="marquee-string">17 YEARS OF PASSION, EMOTION AND STYLE</div>
-		</div>
-	</div>
-	
-	
-	
-	<div class="intro">
-		<div class="container-fluid">		
-			<div class="intro-row">
-				<div class="intro-column intro-column-1">
-					<div class="intro-paragraph">
-						<p>Heart Media is committed to publishing market leading magazines and digital media that connect with the region’s affluent and brand-conscious consumers through their chosen lifestyle activities. Heart Media’s titles have established solid reputations in their respective sectors with illustrious track records. Each one has built a strong market presence across Singapore, Malaysia and Indonesia.</p>
-					</div>
-				</div>
-				<div class="intro-column intro-column-2">
-					<div class="intro-paragraph">
-						<p>With a vision to strengthen its regional growth and offices in Singapore, Kuala Lumpur, Jakarta, Hong Kong and Shanghai, Heart Media is regarded as one of Asia&#39;s fastest growing media and publishing houses.</p>
-						<p>Welcome to our world of luxury lifestyle magazines.</p>
-					</div>
-				</div>			
-			</div>	
-		</div>
-	</div>
-	
-	
-	
-	<div id="s-digital" class="luxuo">
-		<div class="luxuo-row">
-	
-			<div class="luxuo-content">
-				<div class="luxuo-content-inner">
-					
-					<div class="luxuo-logo">
-						<img src="public/images/luxuo-logo.png" alt="Luxuo">
-					</div>
-		
-					<div class="luxuo-links">
-	
-						<a class="link-ext" target="_blank" href="//luxuo.com">
-							<span>www.luxuo.com</span>
-							<svg width="12" height="12" viewBox="0 0 12 12" fill="#B1A234" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M8.12532 2.58911H0.539544V0.589111H11.5395V11.5891H9.53954V4.00331L1.58435 11.9585L0.170135 10.5443L8.12532 2.58911Z"/>
-							</svg>							
-						</a>
-	
-						<ul class="social-icons social-icons-dark social-icons-small">
-							<li class="social-icon">
-								<a target="_blank" href="//www.linkedin.com/in/luxuo-network-475761160">
-									<img src="public/images/social-li-dark.svg" alt="LinkedIn">
-								</a>
-							</li>
-							<li class="social-icon">
-								<a target="_blank" href="//www.facebook.com/luxuo">
-									<img src="public/images/social-fb-dark.svg" alt="Facebook">
-								</a>
-							</li>
-							<li class="social-icon">
-								<a target="_blank" href="//www.instagram.com/luxuo">
-									<img src="public/images/social-ig-dark.svg" alt="Instagram">
-								</a>
-							</li>
-							<li class="social-icon">
-								<a target="_blank" href="//www.twitter.com/luxuo">
-									<img src="public/images/social-tw-dark.svg" alt="Twitter">
-								</a>
-							</li>
-							<li class="social-icon">
-								<a target="_blank" href="//www.pinterest.com/luxuo">
-									<img src="public/images/social-pi-dark.svg" alt="Pinterest">
-								</a>
-							</li>
-						</ul>
-			
-					</div>
-	
-					<div class="luxuo-locations">
-						<a href="//www.luxuo.sg">Singapore</a>
-						<a href="//www.luxuo.my">Malaysia</a>
-						<a href="//luxuo.vn">Vietnam</a>
-						<a href="//luxuothailand.com">Thailand</a>
-						<a href="//www.luxuo.id">Indonesia</a>
-					</div>
-		
-					<div class="luxuo-text">
-						<div class="text text-justify">
-							<p>Luxuo was launched in 2007 and has evolved into the world's first portal for HWNIs combining hard luxury next analysis with soft luxury editorials. Access to elites with global ambitions, covering watches, super-yachts, classic cars, art, property, travel, fashion, and lifestyle, combined with the latest luxury issued of the day.</p>
-							<p>58% of the readership are men and 42% women, aged between 26-49. The audience has a high disposable income and a voracious desire for luxury. With 900 000 pages views, 340K unique visitors, the website is ranked 413 in Singapore.</p>
-						</div>
-					</div>
-					
+			<div class="hero">
+				<div class="hero-inner">
+					<img
+						class="hero-img"
+						src="public/images/hero.jpg"
+						alt=""
+						draggable="false"
+					/>
 				</div>
 			</div>
-	
-			<div class="luxuo-pic">
-				<img src="public/images/luxuo-website.jpg" alt="">
-			</div>
-	
-		</div>
-	</div>
-	
-	
-	
-	<div id="s-publications" class="magazines">
-	
-		<div class="mag-titles">
-			<div class="container">
-				<div id="mag-titles-carousel" class="mag-titles-carousel">
-					<div class="mag-title">L’Officiel</div>
-					<div class="mag-title">Men’s Folio</div>
-					<div class="mag-title">World of Watches</div>
-					<div class="mag-title">Yacht Style</div>
-					<div class="mag-title">Palace</div>
-					<div class="mag-title">L’Officiel Homme</div>
-					<div class="mag-title">Art Republik</div>
-				</div>
-			</div>
-		</div>
-	
-	
-		<div class="mag">
-	
-			<div class="mag-column-illustr">
-				<div id="mag-illustr-carousel" class="mag-illustr-carousel">
-					<figure class="mag-illustr">
-						<img src="public/images/magazine-lofficiel.jpg" alt="L’Officiel">
-					</figure>
-					<figure class="mag-illustr">
-						<img src="public/images/magazine-mensfolio.jpg" alt="L’Officiel">
-					</figure>
-					<figure class="mag-illustr">
-						<img src="public/images/magazine-wow.jpg" alt="Yacht Style">
-					</figure>
-					<figure class="mag-illustr">
-						<img src="public/images/magazine-yacht.jpg" alt="Yacht Style">
-					</figure>
-					<figure class="mag-illustr">
-						<img src="public/images/magazine-palace.jpg" alt="Yacht Style">
-					</figure>
-					<figure class="mag-illustr">
-						<img src="public/images/magazine-hommes.jpg" alt="Yacht Style">
-					</figure>
-					<figure class="mag-illustr">
-						<img src="public/images/magazine-artrepublik.jpg" alt="Yacht Style">
-					</figure>
-				</div>
-			</div>
-		
-			<div class="mag-column-content">
-				<div id="mag-content-carousel" class="mag-content-carousel">
-					<%= require('html-loader!./html/includes/_magazine-lofficiel.html') %>
-					<%= require('html-loader!./html/includes/_magazine-mensfolio.html') %>
-					<%= require('html-loader!./html/includes/_magazine-wow.html') %>
-					<%= require('html-loader!./html/includes/_magazine-yacht.html') %>
-					<%= require('html-loader!./html/includes/_magazine-palace.html') %>
-					<%= require('html-loader!./html/includes/_magazine-hommes.html') %>
-					<%= require('html-loader!./html/includes/_magazine-artrepublik.html') %>
-				</div>
-			</div>
-		
-		</div>
-	
-	
-	</div>
-	
-	
-	
-	<div id="s-events" class="events">
-	
-		<div class="container-fluid">
-			<div class="events-header">
-				<div class="events-header-title">
-					<h2 class="uppercase stroke-heading">Events</h2>
-				</div>
-				<div class="events-header-arrows">
-					<div id="events-arrows" class="events-arrows carousel-arrows carousel-arrows-large"></div>
-				</div>
-			</div>
-		</div>
-	
-		<div class="container-fluid">	
-			<div class="events-carousel-wrap">
-				<div id="events-carousel" class="events-carousel">
-					<div class="event-slide">
-						<a class="event-slide-inner" target="_blank" href="https://youtu.be/S8tEjBm0aSE" style="background-image: url(public/images/event-12th-ann.jpg);">
-							<div class="event-slide-heading">L'Officiel 12th Anniversary Party: Red Riot</div>
-						</a>
-					</div>
-					<div class="event-slide">
-						<a class="event-slide-inner" target="_blank" href="https://youtu.be/jET2waMNMbM" style="background-image: url(public/images/event-22nd-ann.jpg);">
-							<div class="event-slide-heading">Men's Folio 22nd Anniversary Party: Double Trouble</div>
-						</a>
-					</div>
-					<div class="event-slide">
-						<a class="event-slide-inner" target="_blank" href="https://youtu.be/XzKm0-LCXlk" style="background-image: url(public/images/event-coachella.jpg);">
-							<div class="event-slide-heading">Heart Media Summer's Party 2019 : Coachella</div>
-						</a>
-					</div>
-					<div class="event-slide">
-						<a class="event-slide-inner" target="_blank" href="https://youtu.be/h2nJOxROqOQ" style="background-image: url(public/images/event-rendezvous.jpg);">
-							<div class="event-slide-heading">Penang Rendezvous 2019</div>
-						</a>
-					</div>
-					<div class="event-slide">
-						<a class="event-slide-inner" target="_blank" href="https://youtu.be/w3hUYYWJU74" style="background-image: url(public/images/event-11th-ann.jpg);">
-							<div class="event-slide-heading">L'Officiel Singapore's 11th Anniversary Party : BACK II THE FUTURE</div>
-						</a>
-					</div>
-					<div class="event-slide">
-						<a class="event-slide-inner" target="_blank" href="https://youtu.be/znAz3_5VIq8" style="background-image: url(public/images/event-21st-ann.jpg);">
-							<div class="event-slide-heading">Men's Folio 21st Anniversary Party : Vice</div>
-						</a>
-					</div>
-					<div class="event-slide">
-						<a class="event-slide-inner" target="_blank" href="https://youtu.be/H2E57CaM7oo" style="background-image: url(public/images/event-sg-rendezvous.jpg);">
-							<div class="event-slide-heading">Singapore RendezVous</div>
-						</a>
-					</div>
-					<div class="event-slide">
-						<a class="event-slide-inner" target="_blank" href="https://youtu.be/RORrRU3VSvk" style="background-image: url(public/images/event-10th-ann.jpg);">
-							<div class="event-slide-heading">L'Officiel Singapore's 10th Anniversary Party: RATED X</div>
-						</a>
+
+			<div id="s-slogan" class="marquee">
+				<div class="marquee-text js-marquee-infinite">
+					<div class="marquee-string">
+						17 YEARS OF PASSION, EMOTION AND STYLE
 					</div>
 				</div>
 			</div>
-		</div>
-	
-	</div>
-	
-	
-	
-	<div id="s-mobile" class="mobile-section">
-		<div class="container-fluid">
-			<div class="mobile-section-row">
-	
-		
-				<div class="mobile-section-app">
-					<div class="app">
-						<div class="app-mockup">
-							<img src="public/images/magzter-mockup.png" alt="" draggable="false">
-						</div>
-						<div class="app-header">
-							<div class="app-heading heading-2">Heart Media <br />on mobile</div>
-						</div>
-						<div class="app-excerpt">
-							<div class="text">
-								<p>Subscribe to Heart-Media publications via Magzster. Click on the link below for instant access.</p>
+
+			<div class="intro">
+				<div class="container-fluid">
+					<div class="intro-row">
+						<div class="intro-column intro-column-1">
+							<div class="intro-paragraph">
+								<p>
+									Heart Media is committed to publishing market leading
+									magazines and digital media that connect with the region’s
+									affluent and brand-conscious consumers through their chosen
+									lifestyle activities. Heart Media’s titles have established
+									solid reputations in their respective sectors with illustrious
+									track records. Each one has built a strong market presence
+									across Singapore, Malaysia and Indonesia.
+								</p>
 							</div>
 						</div>
-						<div class="app-powered">
-							<div>Powered by</div>
-							<a target="_blank" href="https://www.magzter.com/publishers/HEART-MEDIA-PTE-LTD">
-								<img src="public/images/icon-magzter.png" alt="" draggable="false">
+						<div class="intro-column intro-column-2">
+							<div class="intro-paragraph">
+								<p>
+									With a vision to strengthen its regional growth and offices in
+									Singapore, Kuala Lumpur, Jakarta, Hong Kong and Shanghai,
+									Heart Media is regarded as one of Asia&#39;s fastest growing
+									media and publishing houses.
+								</p>
+								<p>Welcome to our world of luxury lifestyle magazines.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="s-digital" class="luxuo">
+				<div class="luxuo-row">
+					<div class="luxuo-content">
+						<div class="luxuo-content-inner">
+							<div class="luxuo-logo">
+								<img src="public/images/luxuo-logo.png" alt="Luxuo" />
+							</div>
+
+							<div class="luxuo-links">
+								<a class="link-ext" target="_blank" href="//luxuo.com">
+									<span>www.luxuo.com</span>
+									<svg
+										width="12"
+										height="12"
+										viewBox="0 0 12 12"
+										fill="#B1A234"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M8.12532 2.58911H0.539544V0.589111H11.5395V11.5891H9.53954V4.00331L1.58435 11.9585L0.170135 10.5443L8.12532 2.58911Z"
+										/>
+									</svg>
+								</a>
+
+								<ul class="social-icons social-icons-dark social-icons-small">
+									<li class="social-icon">
+										<a
+											target="_blank"
+											href="//www.linkedin.com/in/luxuo-network-475761160"
+										>
+											<img
+												src="public/images/social-li-dark.svg"
+												alt="LinkedIn"
+											/>
+										</a>
+									</li>
+									<li class="social-icon">
+										<a target="_blank" href="//www.facebook.com/luxuo">
+											<img
+												src="public/images/social-fb-dark.svg"
+												alt="Facebook"
+											/>
+										</a>
+									</li>
+									<li class="social-icon">
+										<a target="_blank" href="//www.instagram.com/luxuo">
+											<img
+												src="public/images/social-ig-dark.svg"
+												alt="Instagram"
+											/>
+										</a>
+									</li>
+									<li class="social-icon">
+										<a target="_blank" href="//www.twitter.com/luxuo">
+											<img
+												src="public/images/social-tw-dark.svg"
+												alt="Twitter"
+											/>
+										</a>
+									</li>
+									<li class="social-icon">
+										<a target="_blank" href="//www.pinterest.com/luxuo">
+											<img
+												src="public/images/social-pi-dark.svg"
+												alt="Pinterest"
+											/>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="luxuo-locations">
+								<a href="//www.luxuo.sg">Singapore</a>
+								<a href="//www.luxuo.my">Malaysia</a>
+								<a href="//luxuo.vn">Vietnam</a>
+								<a href="//luxuothailand.com">Thailand</a>
+								<a href="//www.luxuo.id">Indonesia</a>
+							</div>
+
+							<div class="luxuo-text">
+								<div class="text text-justify">
+									<p>
+										Luxuo was launched in 2007 and has evolved into the world's
+										first portal for HWNIs combining hard luxury next analysis
+										with soft luxury editorials. Access to elites with global
+										ambitions, covering watches, super-yachts, classic cars,
+										art, property, travel, fashion, and lifestyle, combined with
+										the latest luxury issued of the day.
+									</p>
+									<p>
+										58% of the readership are men and 42% women, aged between
+										26-49. The audience has a high disposable income and a
+										voracious desire for luxury. With 900 000 pages views, 340K
+										unique visitors, the website is ranked 413 in Singapore.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="luxuo-pic">
+						<img src="public/images/luxuo-website.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+
+			<div id="s-publications" class="magazines">
+				<div class="mag-titles">
+					<div class="container">
+						<div id="mag-titles-carousel" class="mag-titles-carousel">
+							<div class="mag-title">L’Officiel</div>
+							<div class="mag-title">Men’s Folio</div>
+							<div class="mag-title">World of Watches</div>
+							<div class="mag-title">Yacht Style</div>
+							<div class="mag-title">Palace</div>
+							<div class="mag-title">L’Officiel Homme</div>
+							<div class="mag-title">Art Republik</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="mag">
+					<div class="mag-column-illustr">
+						<div id="mag-illustr-carousel" class="mag-illustr-carousel">
+							<figure class="mag-illustr">
+								<img
+									src="public/images/magazine-lofficiel.jpg"
+									alt="L’Officiel"
+								/>
+							</figure>
+							<figure class="mag-illustr">
+								<img
+									src="public/images/magazine-mensfolio.jpg"
+									alt="L’Officiel"
+								/>
+							</figure>
+							<figure class="mag-illustr">
+								<img src="public/images/magazine-wow.jpg" alt="Yacht Style" />
+							</figure>
+							<figure class="mag-illustr">
+								<img src="public/images/magazine-yacht.jpg" alt="Yacht Style" />
+							</figure>
+							<figure class="mag-illustr">
+								<img
+									src="public/images/magazine-palace.jpg"
+									alt="Yacht Style"
+								/>
+							</figure>
+							<figure class="mag-illustr">
+								<img
+									src="public/images/magazine-hommes.jpg"
+									alt="Yacht Style"
+								/>
+							</figure>
+							<figure class="mag-illustr">
+								<img
+									src="public/images/magazine-artrepublik.jpg"
+									alt="Yacht Style"
+								/>
+							</figure>
+						</div>
+					</div>
+
+					<div class="mag-column-content">
+						<div id="mag-content-carousel" class="mag-content-carousel">
+							<%=
+							require('html-loader!./html/includes/_magazine-lofficiel.html') %>
+							<%=
+							require('html-loader!./html/includes/_magazine-mensfolio.html') %>
+							<%= require('html-loader!./html/includes/_magazine-wow.html') %>
+							<%= require('html-loader!./html/includes/_magazine-yacht.html') %>
+							<%= require('html-loader!./html/includes/_magazine-palace.html')
+							%> <%=
+							require('html-loader!./html/includes/_magazine-hommes.html') %>
+							<%=
+							require('html-loader!./html/includes/_magazine-artrepublik.html')
+							%>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="s-events" class="events">
+				<div class="container-fluid">
+					<div class="events-header">
+						<div class="events-header-title">
+							<h2 class="uppercase stroke-heading">Events</h2>
+						</div>
+						<div class="events-header-arrows">
+							<div
+								id="events-arrows"
+								class="events-arrows carousel-arrows carousel-arrows-large"
+							></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container-fluid">
+					<div class="events-carousel-wrap">
+						<div id="events-carousel" class="events-carousel">
+							<div class="event-slide">
+								<a
+									class="event-slide-inner"
+									target="_blank"
+									href="https://youtu.be/S8tEjBm0aSE"
+									style="
+										background-image: url(public/images/event-12th-ann.jpg);
+									"
+								>
+									<div class="event-slide-heading">
+										L'Officiel 12th Anniversary Party: Red Riot
+									</div>
+								</a>
+							</div>
+							<div class="event-slide">
+								<a
+									class="event-slide-inner"
+									target="_blank"
+									href="https://youtu.be/jET2waMNMbM"
+									style="
+										background-image: url(public/images/event-22nd-ann.jpg);
+									"
+								>
+									<div class="event-slide-heading">
+										Men's Folio 22nd Anniversary Party: Double Trouble
+									</div>
+								</a>
+							</div>
+							<div class="event-slide">
+								<a
+									class="event-slide-inner"
+									target="_blank"
+									href="https://youtu.be/XzKm0-LCXlk"
+									style="
+										background-image: url(public/images/event-coachella.jpg);
+									"
+								>
+									<div class="event-slide-heading">
+										Heart Media Summer's Party 2019 : Coachella
+									</div>
+								</a>
+							</div>
+							<div class="event-slide">
+								<a
+									class="event-slide-inner"
+									target="_blank"
+									href="https://youtu.be/h2nJOxROqOQ"
+									style="
+										background-image: url(public/images/event-rendezvous.jpg);
+									"
+								>
+									<div class="event-slide-heading">Penang Rendezvous 2019</div>
+								</a>
+							</div>
+							<div class="event-slide">
+								<a
+									class="event-slide-inner"
+									target="_blank"
+									href="https://youtu.be/w3hUYYWJU74"
+									style="
+										background-image: url(public/images/event-11th-ann.jpg);
+									"
+								>
+									<div class="event-slide-heading">
+										L'Officiel Singapore's 11th Anniversary Party : BACK II THE
+										FUTURE
+									</div>
+								</a>
+							</div>
+							<div class="event-slide">
+								<a
+									class="event-slide-inner"
+									target="_blank"
+									href="https://youtu.be/znAz3_5VIq8"
+									style="
+										background-image: url(public/images/event-21st-ann.jpg);
+									"
+								>
+									<div class="event-slide-heading">
+										Men's Folio 21st Anniversary Party : Vice
+									</div>
+								</a>
+							</div>
+							<div class="event-slide">
+								<a
+									class="event-slide-inner"
+									target="_blank"
+									href="https://youtu.be/H2E57CaM7oo"
+									style="
+										background-image: url(public/images/event-sg-rendezvous.jpg);
+									"
+								>
+									<div class="event-slide-heading">Singapore RendezVous</div>
+								</a>
+							</div>
+							<div class="event-slide">
+								<a
+									class="event-slide-inner"
+									target="_blank"
+									href="https://youtu.be/RORrRU3VSvk"
+									style="
+										background-image: url(public/images/event-10th-ann.jpg);
+									"
+								>
+									<div class="event-slide-heading">
+										L'Officiel Singapore's 10th Anniversary Party: RATED X
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="s-mobile" class="mobile-section">
+				<div class="container-fluid">
+					<div class="mobile-section-row">
+						<div class="mobile-section-app">
+							<div class="app">
+								<div class="app-mockup">
+									<img
+										src="public/images/magzter-mockup.png"
+										alt=""
+										draggable="false"
+									/>
+								</div>
+								<div class="app-header">
+									<div class="app-heading heading-2">
+										Heart Media <br />on mobile
+									</div>
+								</div>
+								<div class="app-excerpt">
+									<div class="text">
+										<p>
+											Subscribe to Heart-Media publications via Magzster. Click
+											on the link below for instant access.
+										</p>
+									</div>
+								</div>
+								<div class="app-powered">
+									<div>Powered by</div>
+									<a
+										target="_blank"
+										href="https://www.magzter.com/publishers/HEART-MEDIA-PTE-LTD"
+									>
+										<img
+											src="public/images/icon-magzter.png"
+											alt=""
+											draggable="false"
+										/>
+									</a>
+								</div>
+								<div class="app-download">
+									<div class="app-download-heading">Get it on</div>
+									<div class="app-download-btns">
+										<a href="#">
+											<img
+												src="public/images/icon-app-store.png"
+												alt="App Store"
+											/>
+										</a>
+										<a href="#">
+											<img
+												src="public/images/icon-gplay.png"
+												alt="Google Play"
+											/>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mobile-section-insta">
+							<div class="insta">
+								<div class="insta-header">
+									<h3 class="insta-heading heading-2">Instagram</h3>
+									<div class="insta-username">
+										<a
+											target="_blank"
+											href="//www.instagram.com/heartmediagroup"
+											>@heartmediagroup</a
+										>
+									</div>
+								</div>
+								<div class="insta-posts">
+									<!-- Posts go here -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="s-partners" class="partners">
+				<div class="container-fluid">
+					<div class="section-header section-header-center">
+						<h2 class="section-heading">Partners</h2>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="partners-logos">
+						<div class="partner-logo">
+							<a target="_blank" href="https://inluxe.cn">
+								<img src="public/images/partner-inluxe.png" alt="Inluxe.cn" />
 							</a>
 						</div>
-						<div class="app-download">
-							<div class="app-download-heading">Get it on</div>
-							<div class="app-download-btns">
-								<a href="#">
-									<img src="public/images/icon-app-store.png" alt="App Store">
-								</a>
-								<a href="#">
-									<img src="public/images/icon-gplay.png" alt="Google Play">
-								</a>
+						<div class="partner-logo">
+							<a target="_blank" href="https://www.luxury-insider.com">
+								<img
+									src="public/images/partner-insider.png"
+									alt="Luxury Insider"
+								/>
+							</a>
+						</div>
+						<div class="partner-logo">
+							<a target="_blank" href="https://www.propgoluxury.com">
+								<img
+									src="public/images/partner-propgo.png"
+									alt="PropGOLuxury.com"
+								/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="s-accolades" class="accolades">
+				<div class="container-fluid">
+					<div class="section-header section-header-center">
+						<h2 class="section-heading">Accolades</h2>
+					</div>
+				</div>
+
+				<div class="container-fluid">
+					<div class="accolades-grid">
+						<div class="accolade">
+							<div class="accolade-inner">
+								<div class="accolade-decor">
+									<img
+										src="public/images/accolade-stars.svg"
+										draggable="false"
+										alt=""
+									/>
+								</div>
+								<div class="accolade-magazine">Heart Media</div>
+								<div class="accolade-title">Publisher of the Year</div>
+								<div class="accolade-excerpt">
+									2014 Media Publisher's Association Singapore Awards
+								</div>
+							</div>
+						</div>
+
+						<div class="accolade">
+							<div class="accolade-inner">
+								<div class="accolade-decor">
+									<img
+										src="public/images/accolade-stars.svg"
+										draggable="false"
+										alt=""
+									/>
+								</div>
+								<div class="accolade-magazine">World of Watches</div>
+								<div class="accolade-title">
+									Special Interest Media <br />of the Year
+								</div>
+								<div class="accolade-excerpt">
+									2014 Media Publisher's Association Singapore Awards
+								</div>
+							</div>
+						</div>
+
+						<div class="accolade">
+							<div class="accolade-inner">
+								<div class="accolade-decor">
+									<img
+										src="public/images/accolade-stars.svg"
+										draggable="false"
+										alt=""
+									/>
+								</div>
+								<div class="accolade-magazine">L'OFFICIEL Singapore</div>
+								<div class="accolade-title">
+									Women's Media <br />of the Year
+								</div>
+								<div class="accolade-excerpt">
+									2014 Media Publisher's Association Singapore Awards
+								</div>
+							</div>
+						</div>
+
+						<div class="accolade">
+							<div class="accolade-inner">
+								<div class="accolade-decor">
+									<img
+										src="public/images/accolade-stars.svg"
+										draggable="false"
+										alt=""
+									/>
+								</div>
+								<div class="accolade-magazine">ART REPUBLIK</div>
+								<div class="accolade-title">
+									Consumer Front Cover <br />of the Year
+								</div>
+								<div class="accolade-excerpt">
+									2014 Media Publisher's Association Singapore Awards
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-		
-		
-				<div class="mobile-section-insta">
-					<div class="insta">
-						<div class="insta-header">
-							<h3 class="insta-heading heading-2">Instagram</h3>
-							<div class="insta-username">
-								<a target="_blank" href="//www.instagram.com/heartmediagroup">@heartmediagroup</a>
-							</div>
-						</div>
-						<div class="insta-posts">
-							<!-- Posts go here -->
-						</div>
-					</div>
-				</div>
-		
-		
 			</div>
-		</div>
-	</div>
-	
-	
-	
-	<div id="s-partners" class="partners">
-	
-		<div class="container-fluid">
-			<div class="section-header section-header-center">
-				<h2 class="section-heading">Partners</h2>
-			</div>
-		</div>
-	
-		<div class="container">
-			<div class="partners-logos">
-				<div class="partner-logo">
-					<a target="_blank" href="https://inluxe.cn">
-						<img src="public/images/partner-inluxe.png" alt="Inluxe.cn">
-					</a>
-				</div>
-				<div class="partner-logo">
-					<a target="_blank" href="https://www.luxury-insider.com">
-						<img src="public/images/partner-insider.png" alt="Luxury Insider">
-					</a>
-				</div>
-				<div class="partner-logo">
-					<a target="_blank" href="https://www.propgoluxury.com">
-						<img src="public/images/partner-propgo.png" alt="PropGOLuxury.com">
-					</a>
-				</div>
-			</div>
-		</div>
-	
-	</div>
-	
-	
-	
-	<div id="s-accolades" class="accolades">
-	
-		<div class="container-fluid">
-			<div class="section-header section-header-center">
-				<h2 class="section-heading">Accolades</h2>
-			</div>
-		</div>
-	
-		<div class="container-fluid">
-			<div class="accolades-grid">
-	
-				<div class="accolade">
-					<div class="accolade-inner">
-						<div class="accolade-decor">
-							<img src="public/images/accolade-stars.svg" draggable="false" alt="">
-						</div>
-						<div class="accolade-magazine">Heart Media</div>
-						<div class="accolade-title">Publisher of the Year</div>
-						<div class="accolade-excerpt">2014 Media Publisher's Association Singapore Awards</div>
-					</div>
-				</div>
-		
-				<div class="accolade">
-					<div class="accolade-inner">
-						<div class="accolade-decor">
-							<img src="public/images/accolade-stars.svg" draggable="false" alt="">
-						</div>
-						<div class="accolade-magazine">World of Watches</div>
-						<div class="accolade-title">Special Interest Media <br />of the Year</div>
-						<div class="accolade-excerpt">2014 Media Publisher's Association Singapore Awards</div>
-					</div>
-				</div>
-		
-				<div class="accolade">
-					<div class="accolade-inner">
-						<div class="accolade-decor">
-							<img src="public/images/accolade-stars.svg" draggable="false" alt="">
-						</div>
-						<div class="accolade-magazine">L'OFFICIEL Singapore</div>
-						<div class="accolade-title">Women's Media <br />of the Year</div>
-						<div class="accolade-excerpt">2014 Media Publisher's Association Singapore Awards</div>
-					</div>
-				</div>
-		
-				<div class="accolade">
-					<div class="accolade-inner">
-						<div class="accolade-decor">
-							<img src="public/images/accolade-stars.svg" draggable="false" alt="">
-						</div>
-						<div class="accolade-magazine">ART REPUBLIK</div>
-						<div class="accolade-title">Consumer Front Cover <br />of the Year</div>
-						<div class="accolade-excerpt">2014 Media Publisher's Association Singapore Awards</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	
-	</div>
-	
-	
-	
-	<div id="s-brands" class="partner-brands">
-	
-		<div class="container-fluid">
-			<div class="section-header section-header-center">
-				<h2 class="section-heading">Brands that advertise with us</h2>
-			</div>
-		</div>
-	
-		<div id="brands-carousel" class="brands-carousel">
-	
-			<div>
-				<div class="brands-grid">
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-lv-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-lv.png" alt="Louis Vuitton">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-gucci-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-gucci.png" alt="Gucci">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-dior-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-dior.png" alt="Dior">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-prada-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-prada.png" alt="Prada">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-rolex-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-rolex.png" alt="Rolex">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-pp-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-pp.png" alt="Patek Philippe">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-ysl-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-ysl.png" alt="YvesSaintLaurent">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-vca-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-vca.png" alt="Van Cleef & Arpels">
-						</div>
-					</div>
-				</div>
-			</div>
-	
-			<div>
-				<div class="brands-grid">
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-omega-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-omega.png" alt="Omega">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-tiffany-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-tiffany.png" alt="Tiffany&Co">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-bvlgari-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-bvlgari.png" alt="BVLGARI">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-cartier-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-cartier.png" alt="Cartier">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-erm-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-erm.png" alt="Ermenegildo Zegna">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-fendi-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-fendi.png" alt="Fendi">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-hermes-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-hermes.png" alt="Hermes">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-th-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-th.png" alt="Tag Heuer">
-						</div>
-					</div>
-				</div>
-			</div>
-	
-			<div>
-				<div class="brands-grid">
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-burberry-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-burberry.png" alt="Burberry">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-landrover-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-landrover.png" alt="Land Rover">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-bottega-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-bottega.png" alt="Bottega Veneta">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-longines-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-longines.png" alt="Longines">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-longchamp-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-longchamp.png" alt="Longchamp">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-versace-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-versace.png" alt="Versace">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-citi-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-citi.png" alt="Citibank">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-berluti-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-berluti.png" alt="Berluti">
-						</div>
-					</div>
-				</div>
-			</div>
-	
-			<div>
-				<div class="brands-grid">
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-tissot-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-tissot.png" alt="Tissot">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-hw-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-hw.png" alt="Harry Winston">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-jeep-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-jeep.png" alt="Jeep">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-mont-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-mont.png" alt="Mont Blanc">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-estee-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-estee.png" alt="Estée Lauder Companies">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-uob-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-uob.png" alt="United Overseas Bank">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-tommy-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-tommy.png" alt="Tommy Hilfiger">
-						</div>
-					</div>
-					<div class="brand-logo">
-						<div class="brand-logo-inner">
-							<img class="brand-logo-img-white" src="public/images/logo-mazda-white.png" alt="">
-							<img class="brand-logo-img-color" src="public/images/logo-mazda.png" alt="Mazda">
-						</div>
-					</div>
-				</div>
-			</div>
-	
-		</div>
-	
-		<div id="brands-carousel-dots"></div>
-	
-	</div>
-	
-	
-	<div id="s-contact" class="contact">
-		<div class="text-center">
-			<button class="circle-button circle-button-large circle-button-dark js-show-contact"><span>Contact us</span></button>
-		</div>
-	</div>
-	
-	
-	
-	<%= require('html-loader!./html/components/_footer.html') %>
-	
-	
-	
-	<%= require('html-loader!./html/components/_contact-modal.html') %>	
 
+			<div id="s-brands" class="partner-brands">
+				<div class="container-fluid">
+					<div class="section-header section-header-center">
+						<h2 class="section-heading">Brands that advertise with us</h2>
+					</div>
+				</div>
 
-</div>
+				<div class="splide" id="carousel_1">
+					<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide">Slide 01</li>
+							<li class="splide__slide">Slide 02</li>
+							<li class="splide__slide">Slide 03</li>
+						</ul>
+					</div>
+				</div>
+				<div id="brands-carousel" class="brands-carousel splide">
+					<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide">
+								<div>
+									<div class="brands-grid">
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-lv-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-lv.png"
+													alt="Louis Vuitton"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-gucci-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-gucci.png"
+													alt="Gucci"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-dior-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-dior.png"
+													alt="Dior"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-prada-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-prada.png"
+													alt="Prada"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-rolex-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-rolex.png"
+													alt="Rolex"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-pp-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-pp.png"
+													alt="Patek Philippe"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-ysl-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-ysl.png"
+													alt="YvesSaintLaurent"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-vca-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-vca.png"
+													alt="Van Cleef & Arpels"
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="splide__slide">
+								<div>
+									<div class="brands-grid">
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-omega-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-omega.png"
+													alt="Omega"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-tiffany-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-tiffany.png"
+													alt="Tiffany&Co"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-bvlgari-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-bvlgari.png"
+													alt="BVLGARI"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-cartier-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-cartier.png"
+													alt="Cartier"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-erm-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-erm.png"
+													alt="Ermenegildo Zegna"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-fendi-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-fendi.png"
+													alt="Fendi"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-hermes-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-hermes.png"
+													alt="Hermes"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-th-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-th.png"
+													alt="Tag Heuer"
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="splide__slide">
+								<div>
+									<div class="brands-grid">
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-burberry-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-burberry.png"
+													alt="Burberry"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-landrover-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-landrover.png"
+													alt="Land Rover"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-bottega-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-bottega.png"
+													alt="Bottega Veneta"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-longines-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-longines.png"
+													alt="Longines"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-longchamp-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-longchamp.png"
+													alt="Longchamp"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-versace-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-versace.png"
+													alt="Versace"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-citi-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-citi.png"
+													alt="Citibank"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-berluti-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-berluti.png"
+													alt="Berluti"
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="splide__slide">
+								<div>
+									<div class="brands-grid">
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-tissot-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-tissot.png"
+													alt="Tissot"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-hw-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-hw.png"
+													alt="Harry Winston"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-jeep-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-jeep.png"
+													alt="Jeep"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-mont-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-mont.png"
+													alt="Mont Blanc"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-estee-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-estee.png"
+													alt="Estée Lauder Companies"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-uob-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-uob.png"
+													alt="United Overseas Bank"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-tommy-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-tommy.png"
+													alt="Tommy Hilfiger"
+												/>
+											</div>
+										</div>
+										<div class="brand-logo">
+											<div class="brand-logo-inner">
+												<img
+													class="brand-logo-img-white"
+													src="public/images/logo-mazda-white.png"
+													alt=""
+												/>
+												<img
+													class="brand-logo-img-color"
+													src="public/images/logo-mazda.png"
+													alt="Mazda"
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
+			<div id="s-contact" class="contact">
+				<div class="text-center">
+					<button
+						class="
+							circle-button circle-button-large circle-button-dark
+							js-show-contact
+						"
+					>
+						<span>Contact us</span>
+					</button>
+				</div>
+			</div>
 
-</body>
+			<%= require('html-loader!./html/components/_footer.html') %> <%=
+			require('html-loader!./html/components/_contact-modal.html') %>
+		</div>
+	</body>
 </html>

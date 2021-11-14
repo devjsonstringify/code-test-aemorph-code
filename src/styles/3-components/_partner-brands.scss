@@ -1,99 +1,100 @@
-
 .partner-brands {
-    margin-top: $lg;
-    margin-bottom: $lg;
+	margin-top: $lg;
+	margin-bottom: $lg;
 }
-
 
 .brands-carousel {
-    padding-top: $sm;
+	padding-top: $sm;
+}
+.brands-grid {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	max-width: 1100px;
+	margin: auto;
 }
 
-
-.brands-grid {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    max-width: 1100px;
-    margin: auto;
+.splide__pagination {
+	position: relative;
+}
+.splide__pagination__brands-carousel {
+	.splide__pagination__page {
+		background-color: #fff3;
+		margin: 15px;
+		height: $paginateDot;
+		width: $paginateDot;
+		&.is-active {
+			background-color: #ffffff;
+			transform: scale(1);
+		}
+	}
 }
 
 .brand-logo {
-    flex: 1;
-    flex-basis: 50%;
-    margin-bottom: $md;
+	flex: 1;
+	flex-basis: 50%;
+	margin-bottom: $md;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-
 .brand-logo-inner {
-    opacity: 0.6;
+	opacity: 0.6;
 
-    position: relative;
-    width: 100%;
-    max-width: 110px;
+	position: relative;
+	width: 100%;
+	max-width: 110px;
 
-    transition: $trans-normal;
+	transition: $trans-normal;
 
-    &:hover,
-    &:focus {
-        opacity: 1;
-    }
+	&:hover,
+	&:focus {
+		opacity: 1;
+	}
 
-    img {
-        display: block;
-        width: 100%;
-        margin: 0;
+	img {
+		display: block;
+		width: 100%;
+		margin: 0;
 
-        transition: $trans-normal;
-        will-change: opacity;
-    }
+		transition: $trans-normal;
+		will-change: opacity;
+	}
 }
 
 .brand-logo-img-white {
-
-    .brand-logo-inner:hover & {
-        opacity: 0;
-    }
+	.brand-logo-inner:hover & {
+		opacity: 0;
+	}
 }
 
 .brand-logo-img-color {
-    opacity: 0;
+	opacity: 0;
 
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
 
-    .brand-logo-inner:hover & {
-        opacity: 1;
-    }
-
+	.brand-logo-inner:hover & {
+		opacity: 1;
+	}
 }
 
-
-
-
-@media (min-width: 768px){
-
-    .brand-logo {
-        flex-basis: 25%;
-    }
-
+@media (min-width: 768px) {
+	.brand-logo {
+		flex-basis: 25%;
+	}
 }
 
+@media (min-width: 1200px) {
+	.partner-brands {
+		margin-top: $xl;
+	}
 
-@media (min-width: 1200px){
-
-    .partner-brands {
-        margin-top: $xl;
-    }
-
-    .brand-logo-inner {
-        max-width: 170px;
-    }
-
+	.brand-logo-inner {
+		max-width: 170px;
+	}
 }
