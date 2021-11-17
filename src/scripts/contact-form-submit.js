@@ -1,37 +1,53 @@
-import $ from "jquery";
-
-const $form = $('#contact-form');
+const $form = document.querySelector('#contact-form');
 const msgInput = document.getElementById('user_msg');
+const endPoint = 'http://aemorph.com/static/654-heartmedia/message/';
+const closeBtn = document.querySelector('#contact-modal-close');
 
+const populateSubmissionStatus = (status) => {
 
-const formFeedback = (response) => {
+    if (status === 'SUCCESS') { 
+        $form.classList.add('contact-form-success');
+        if (msgInput) {
+            msgInput.classList.remove('large-field-input-full');
+        }
+        $form.reset();
+    }
 
-	$form.removeClass('contact-form-success');
-	$form.removeClass('contact-form-not-filled');
-	$form.removeClass('contact-form-error');
-	
-	if(response == 'success'){
-		$form.addClass('contact-form-success');
-		$form.trigger("reset");
-		if(msgInput){
-			msgInput.classList.remove('large-field-input-full');
-		}
-	} else if(response == 'notfilled'){
-		$form.addClass('contact-form-not-filled');
-	} else {
-		$form.addClass('contact-form-error');
-	}
-
+    if (status === 'REJECT') {
+        $form.classList.add('contact-form-error');
+    }
+    
+    if(status == 'IDLE'){
+        $form.classList.remove('contact-form-success');
+        $form.classList.remove('contact-form-not-filled');
+        $form.classList.remove('contact-form-error');
+        $form.classList.remove('contact-form-error');
+        msgInput.classList.remove('large-field-input-full');
+    }
 };
 
+const sendRequestToServer = (url, options) => fetch(url, options).then((response) =>  response.json());
 
+$form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    populateSubmissionStatus('IDLE');
+    const data = Object.fromEntries(new FormData(event.target).entries());
 
-$form.submit((e) => {
-
-	e.preventDefault();
-
-	$.post('http://aemorph.com/static/654-heartmedia/message/', $form.serialize(), (response) => {
-		formFeedback(response);
-	});
-
+    const options = {
+        method: 'POST',
+        mode: "no-cors",
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body:JSON.stringify(data)
+    };
+ 
+    // validation
+    if (data.user_name === "" | data.user_email === "" | data.user_msg === "") {
+        populateSubmissionStatus('IDLE');
+        populateSubmissionStatus('REJECT');
+        $form.classList.add('contact-form-not-filled');
+        return false;
+    }  
+    sendRequestToServer(endPoint, options).then(() =>  populateSubmissionStatus('SUCCESS')).catch(() =>  populateSubmissionStatus('REJECT'));
 });
