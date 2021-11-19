@@ -41,6 +41,10 @@ module.exports = {
       filename: 'personal-data-protection.html',
       template: Path.resolve(__dirname, '../src/personal-data-protection.html')
     }),
+    new HtmlWebpackPlugin({
+      filename: 'aphrodite.html',
+      template: Path.resolve(__dirname, '../src/aphrodite.html')
+    }),
   ],
   resolve: {
     alias: {
