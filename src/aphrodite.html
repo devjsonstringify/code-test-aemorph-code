@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Heart Media — 17 years of passion, emotion and style</title>
+
+		<meta
+			name="description"
+			content="Heart Media is committed to publishing market leading magazines and digital media that connect with the region’s affluent and brand-conscious consumers through their chosen lifestyle activities."
+		/>
+
+		<link rel="icon" href="public/favicon/favicon.ico" type="image/x-icon" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="public/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="public/favicon/favicon-16x16.png"
+		/>
+		<link
+			rel="mask-icon"
+			href="public/favicon/safari-pinned-tab.svg"
+			color="#5bbad5"
+		/>
+
+		<noscript>
+			<style>
+				.splash {
+					display: none;
+				}
+			</style>
+		</noscript>
+	</head>
+
+	<body>
+		<div id="aphrodite-main">
+			<%= require('html-loader!./html/aphrodite/components/_header.html') %> <%=
+			require('html-loader!./html/aphrodite/components/_hero.html') %> <%=
+			require('html-loader!./html/aphrodite/components/_product-categories.html')
+			%> <%=
+			require('html-loader!./html/aphrodite/components/_projects-carousel.html')
+			%> <%=
+			require('html-loader!./html/aphrodite/components/_testimonial.html') %>
+			<%=
+			require('html-loader!./html/aphrodite/components/_social-instagram.html')
+			%> <%= require('html-loader!./html/aphrodite/components/_footer.html') %>
+		</div>
+	</body>
+</html>
