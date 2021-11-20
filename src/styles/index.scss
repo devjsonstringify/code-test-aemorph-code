@@ -49,7 +49,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 
-
+@include font-face('Argent CF', '../../public/fonts/ArgentCF/ArgentCF-Bold', 100, normal, ttf); 
+@include font-face('Argent CF', '../../public/fonts/ArgentCF/ArgentCF-BoldItalic', 100, normal, ttf); 
+@include font-face('Argent CF', '../../public/fonts/ArgentCF/ArgentCF-DemiBold', 100, normal, ttf); 
+@include font-face('Argent CF', '../../public/fonts/ArgentCF/ArgentCF-DemiBoldItalic', 100, italic, ttf); 
+@include font-face('Argent CF', '../../public/fonts/ArgentCF/ArgentCF-ExtraBold', 100, normal, ttf); 
+@include font-face('Argent CF', '../../public/fonts/ArgentCF/ArgentCF-Light', 100, normal, ttf); 
+@include font-face('Argent CF', '../../public/fonts/ArgentCF/ArgentCF-Regular', 100, normal, ttf); 
+@include font-face('Argent CF', '../../public/fonts/ArgentCF/ArgentCF-RegularItalic', 100, normal, ttf); 
+@include font-face('Argent CF', '../../public/fonts/ArgentCF/ArgentCF-Thin', 100, normal, ttf); 
 
 // PLUGINS AND MODULES
 
@@ -185,4 +193,4 @@ a {
 @import '4-templates/page-pdpa';
 
 // APHRODITE PAGE
-@import '../../src/html/aphrodite/scss/components/index.scss'
+@import '../../src/html/aphrodite/scss/index.scss'
