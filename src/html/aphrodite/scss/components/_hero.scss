@@ -1,0 +1,156 @@
+$mt: 4rem;
+
+#hero-aphrodite {
+	background-color: $accent-background-gray;
+	@include media('<=desktop') {
+		height: 37.5rem;
+	}
+}
+.aphrodite-hero-background {
+	background: url('../../public/images/aphrodite/hero-min.jpg');
+	background-position: right top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	padding-top: (5 / 12) * 100%;
+
+	@include media('<=desktop') {
+		display: none;
+		padding: 0;
+	}
+}
+.aphrodite-hero-content-section {
+	box-sizing: border-box;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+
+	@include media('<=desktop') {
+		box-sizing: border-box;
+		bottom: unset;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+		left: unset;
+		position: relative;
+		padding-top: $mt / 2;
+		padding-bottom: $mt / 2;
+		margin-left: 0;
+		margin-right: 0;
+		top: unset;
+		width: 100%;
+	}
+
+	.content-inner {
+		width: calc(100% - 60%);
+		margin-left: 0;
+		margin-right: 0;
+
+		@include media('<=desktop') {
+			width: 100%;
+		}
+	}
+	@include media('<=1055px') {
+		left: 0;
+	}
+	@include media('>=1280', '<=1890px') {
+		font-size: 3.5rem;
+	}
+
+	h1 {
+		font-weight: bold;
+		font-size: 3.5rem;
+		letter-spacing: 2px;
+		vertical-align: top;
+		margin-bottom: 35px;
+
+		@include media('>=desktop', '<=1280px') {
+			font-size: 3rem;
+		}
+		@include media('>=1056', '<=1890px') {
+			font-size: 3.5rem;
+		}
+		@include media('<=1055px') {
+			font-size: 3rem;
+		}
+		@include media('<=768px') {
+			font-size: 2rem;
+		}
+	}
+	p {
+		font-weight: 500;
+		font-size: 18px;
+		font-family: 'Helvetica Neue', 'Helvetica Neue', Helvetica, Arial,
+			'Lucida Grande', sans-serif;
+		line-height: 28.8px;
+	}
+}
+
+.aphrodite-hero-content {
+	@include media('<=desktop') {
+		margin-top: 0;
+	}
+	@include media('>desktop', '<=1280px') {
+		margin-top: $mt / 2;
+	}
+}
+.list-sponsor-wrapper {
+	margin-top: $mt + 1.25rem;
+	@include media('<=1199px') {
+		margin-top: $mt;
+	}
+}
+.list-sponsor {
+	display: flex;
+	width: 100%;
+	@include media('<=480px') {
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+	}
+}
+.item-sponsor {
+	max-width: 100%;
+	margin: 10px 0.938rem;
+	height: auto;
+	@include media('<=480px') {
+		flex-wrap: wrap;
+	}
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+#forbes {
+	width: 64px;
+	height: 19.02px;
+	@include media('<=480px') {
+		flex-basis: 20%;
+	}
+}
+#bazzar {
+	width: 72px;
+	height: 19.16px;
+	@include media('<=480px') {
+		flex-basis: 20%;
+	}
+}
+#folio {
+	width: 64px;
+	height: 16.94px;
+	@include media('<=480px') {
+		flex-basis: 20%;
+	}
+}
+#womens-weekly {
+	width: 94px;
+	height: 19.07px;
+	@include media('<=480px') {
+		flex-basis: 20%;
+	}
+}
