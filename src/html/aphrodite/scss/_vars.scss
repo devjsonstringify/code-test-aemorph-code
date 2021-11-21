@@ -1,7 +1,15 @@
 // COLORS
 $accent-main: #935568;
 $accent-background: #e5e5e5;
+$accent-background-gray: #9795a0;
 
 // SPACING
 $space: 135.4px;
 $padding: 24px;
+
+// 	MEDIA QUERIES BREAKPOINTS
+$breakpoints: (
+	phone: 320px,
+	tablet: 768px,
+	desktop: 1024px,
+);
