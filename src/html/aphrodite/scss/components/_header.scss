@@ -1,10 +1,13 @@
 #main-header {
 	background-color: #ffffff;
+	.container-maxWidthXl {
+		padding-top: 2.5rem;
+		padding-bottom: 2.5rem;
+	}
 	.logo-aphrodite {
 		box-sizing: border-box;
 		color: $accent-main;
 		font-family: 'Argent CF';
 		font-weight: bold;
-		padding: 27px $space;
 	}
 }
