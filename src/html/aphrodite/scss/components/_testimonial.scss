@@ -1,0 +1,50 @@
+#testimonial {
+	.section-inner {
+		margin-top: 10.938rem;
+		margin-bottom: 10.938rem;
+
+		@include media('<=desktop') {
+			margin-bottom: 6.25rem auto;
+		}
+	}
+	h6 {
+		color: $accent-text-color;
+		font-size: 3rem;
+		font-style: italic;
+		font-weight: 400;
+		line-height: 5.438rem;
+		position: relative;
+		text-align: center;
+
+		@include media('<=desktop') {
+			font-size: 2rem;
+			line-height: calc(5.438rem / 2);
+		}
+
+		&::before {
+			background-repeat: no-repeat;
+			background: url('../../public/images/aphrodite/quote.png');
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+			content: '';
+			height: 7rem;
+			left: 0;
+			position: absolute;
+			right: 0;
+			opacity: 15%;
+			width: 14rem;
+			top: -1rem;
+
+			@include media('<=desktop') {
+				height: 4.5rem;
+				left: 0;
+				position: absolute;
+				opacity: 15%;
+				right: 0;
+				top: -3rem;
+				width: 5.789rem;
+			}
+		}
+	}
+}
