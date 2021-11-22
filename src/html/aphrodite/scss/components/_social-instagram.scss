@@ -1,0 +1,39 @@
+#social-instagram {
+	.section-content {
+		position: relative;
+	}
+	.section-inner {
+		margin: 3.438rem auto;
+	}
+	.follow-up {
+		box-sizing: border-box;
+		background-color: #ffff;
+		color: $accent-main;
+		font-size: 1rem;
+		font-weight: 400;
+		font-family: 'Helvetica Neue';
+		line-height: 1.193rem;
+		left: 0;
+		right: 0;
+		top: 0;
+		margin: auto;
+		padding: 1rem;
+		position: absolute;
+		text-align: center;
+		width: 13.75rem;
+	}
+	.instagram-photos {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		gap: 0.938rem;
+
+		@include media('<=desktop') {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		& > div {
+			background-color: $accent-main;
+			min-height: 13.75rem;
+		}
+	}
+}
