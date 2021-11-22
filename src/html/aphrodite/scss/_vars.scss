@@ -2,6 +2,11 @@
 $accent-main: #935568;
 $accent-background: #e5e5e5;
 $accent-background-gray: #9795a0;
+$accent-background-gradient: linear-gradient(
+	180deg,
+	rgba(107, 54, 70, 0.8) 0%,
+	rgba(107, 54, 70, 0.15) 100%
+);
 
 // SPACING
 $space: 135.4px;
