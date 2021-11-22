@@ -1,6 +1,7 @@
 #product-categories {
 	padding-top: 5.313rem;
 	padding-bottom: 5.313rem;
+	margin-bottom: 4.375rem;
 	background-color: #fff;
 
 	.section-grid {
@@ -78,6 +79,10 @@
 			padding: 2.5rem;
 			box-sizing: border-box;
 		}
+	}
+
+	@include media('<=desktop') {
+		margin-bottom: 0;
 	}
 }
 

@@ -1,0 +1,40 @@
+#products-carousel {
+	color: $accent-text-color;
+	background-color: $accent-background-light-brown;
+	padding-top: 6.25rem;
+	position: relative;
+	padding-bottom: 6.25rem;
+	min-height: 31.25rem;
+
+	.section-content {
+		box-sizing: border-box;
+		margin: 0;
+		max-width: calc(100% / 2);
+		padding: 0 3.125rem 0 0;
+		@include media('<=desktop') {
+			max-width: 100%;
+			padding: 0 3.125rem 0 0;
+		}
+	}
+
+	#section-slider {
+		max-width: calc(100% / 2);
+		position: absolute;
+		right: 0;
+		top: -5rem;
+
+		@include media('<=desktop') {
+			max-width: 100%;
+			position: relative;
+			margin: 2rem auto;
+			right: unset;
+			top: unset;
+		}
+	}
+	h6 {
+		font-size: 1.125rem;
+		font-weight: 400;
+		font-family: 'Helvetica Neue';
+		line-height: 2.025rem;
+	}
+}
