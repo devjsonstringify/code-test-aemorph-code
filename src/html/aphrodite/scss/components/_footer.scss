@@ -1,0 +1,103 @@
+@mixin form-input {
+	box-sizing: border-box;
+	border: 1px solid white;
+	background: $accent-main;
+	display: block;
+	font-size: 1rem;
+	height: 3rem;
+	padding: 1.25rem;
+	width: 100%;
+}
+
+#aphrodite-footer {
+	input:focus,
+	textarea:focus {
+		outline: none;
+	}
+
+	background-position: center center;
+	background-repeat: no-repeat;
+	background: url(../../public/images/aphrodite/interior2.jpg);
+	background-size: cover;
+	padding: 2rem;
+
+	@include media('<=768px') {
+		padding: 2rem 0;
+	}
+
+	.section-inner {
+		height: 100%;
+		position: relative;
+		margin: 9.375rem auto;
+		width: 100%;
+	}
+	.section-content {
+		display: block;
+		height: 100%;
+		min-height: 36.25rem;
+	}
+
+	#footer-form {
+		background-color: $accent-main;
+		bottom: 0;
+		box-sizing: border-box;
+		height: 100%;
+		position: absolute;
+		padding: 3.75rem 5.625rem;
+		margin: auto;
+		right: 0;
+		top: 0;
+		width: calc(100% / 2);
+
+		.form-header {
+			margin-bottom: 3.75rem;
+			font-family: 'Argent CF';
+			font-size: 1.75rem;
+			font-weight: 700;
+			text-align: center;
+			line-height: 1.75rem;
+
+			@include media('<=480px') {
+				font-size: 1.5rem;
+			}
+		}
+
+		.form-group {
+			margin-bottom: 1.25rem;
+		}
+		button {
+			@include form-input;
+			background-color: #ffffff;
+			color: $accent-main;
+			font-weight: 500;
+			height: auto;
+		}
+		.form-group textArea {
+			@include form-input;
+			height: 6.25rem;
+			&::placeholder {
+				color: #ffffff;
+				opacity: 0.5;
+			}
+		}
+
+		.form-group input {
+			@include form-input;
+
+			&::placeholder {
+				color: #ffffff;
+				opacity: 0.5;
+			}
+		}
+		@include media('<=desktop') {
+			bottom: unset;
+			box-sizing: border-box;
+			position: relative;
+			padding: 3.5rem;
+			margin: 0 auto;
+			right: unset;
+			top: unset;
+			width: 100%;
+		}
+	}
+}
