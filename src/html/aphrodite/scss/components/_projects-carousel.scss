@@ -11,6 +11,7 @@
 		margin: 0;
 		max-width: calc(100% / 2);
 		padding: 0 3.125rem 0 0;
+		position: relative;
 		@include media('<=desktop') {
 			max-width: 100%;
 			padding: 0 3.125rem 0 0;
@@ -18,7 +19,12 @@
 	}
 
 	#section-slider {
+		background-color: $accent-main;
+		bottom: 0;
+		left: 0;
+		margin: 0 0 5rem auto;
 		max-width: calc(100% / 2);
+		min-height: 31.875rem;
 		position: absolute;
 		right: 0;
 		top: -5rem;
